@@ -100,11 +100,6 @@
 	        e.preventDefault();
 	        $(document).off("scroll");
 
-	        $('a').each(function () {
-	            $(this).removeClass('current');
-	        })
-	        $(this).addClass('current');
-
 	        var target = this.hash,
 	            menu = target;
 	        $target = $(target);
@@ -122,13 +117,6 @@
 	    $('#nav ul li a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() >= scrollPos) {
-	            $('#nav ul li a').removeClass("current");
-	            currLink.addClass("current");
-	        }
-	        else{
-	            currLink.removeClass("current");
-	        }
 	    });
 	}
 

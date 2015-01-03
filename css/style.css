@@ -391,7 +391,7 @@
 
 	#banner
 	{
-		background: #395f84 url('../images/index/background.jpg');
+		background: url("../images/index/background.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
