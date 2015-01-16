@@ -15,7 +15,7 @@
 	{
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #5d5d5d;
+		color: #000;
 	}
 
 	strong, b
@@ -589,7 +589,7 @@
 		text-decoration: underline;
 	}
 
-	.cd-top {
+	.cd-top {box
 		display: inline-block;
 		height: 40px;
 		width: 40px;
@@ -639,3 +639,17 @@
 		    bottom: 30px;
 	  }
 	}
+	.p1 {
+		style: font-weight:normal;
+	}
+
+	.box1
+		{
+			background: #ffffff;
+			border-bottom: solid 1px #ccc;
+		}
+			.box1 .image.featured
+			{
+				position: relative;
+				width: auto;
+			}
