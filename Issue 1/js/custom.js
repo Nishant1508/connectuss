@@ -1,16 +1,1 @@
-// JavaScript Document
-
-$(document).ready(function() {
-     var monthName = [ " ","January", "February", "March", "April", "May", "June",
-          "July", "August", "September", "October", "November", "December" ];
-
-        $("#jump-button").click(function(){
-           var jumpDate = $("#date-input").val();
-           if (jumpDate != null && jumpDate.length==10){
-              var array = jumpDate.split('/');
-              var month = array[0], day = array[1], year = array[2];
-              window.location = ("/" + year + "/" + monthName[parseInt(month)] + "/" + parseInt(day));
-            }
-        });
-});
-
+$(document).ready(function(){var a=[" ","January","February","March","April","May","June","July","August","September","October","November","December"];$("#jump-button").click(function(){var e=$("#date-input").val();if(e!=null&&e.length==10){var f=e.split("/");var d=f[0],b=f[1],c=f[2];window.location=("/"+c+"/"+a[parseInt(d)]+"/"+parseInt(b))}})});
