@@ -451,7 +451,19 @@
 				<br>
 				<div class="row">
 					<div class="4u">
-						<iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FConnectUSS&amp;width=820px&amp;height=505px&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; background:#fff; overflow:hidden; width:100%; height:505px;" allowTransparency="false"></iframe>
+						<div id="fb-root"></div>
+							<script>
+								(function(d, s, id) {
+									var js, fjs = d.getElementsByTagName(s)[0];
+									if (d.getElementById(id)) return;
+									js = d.createElement(s); js.id = id;
+									js.async=true;
+									js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+								(document, 'script', 'facebook-jssdk'));
+							</script>
+							<div class="fb-like-box" data-href="https://www.facebook.com/ConnectUSS" data-width="820px" data-height="505px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
 					</div>
 
 					<div class="4u">
